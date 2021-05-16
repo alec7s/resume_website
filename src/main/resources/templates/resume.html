@@ -1,19 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><head>
-
     <title>Resume</title>
 </head>
 <body>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <div th:replace="pagelinks :: navlinks"></div>
-    <h1>[RESUME]</h1>
+    <header>
+        <!-- Site navigation: -->
+        <nav>
+            <a href="/about">About</a>
+            <a href="/">Resume</a>
+        </nav>
+        <!-- Resume header: -->
+        <h1>Alexander C. Evans</h1>
+        <h3>alex@AddMyEmailLater.com</h3>
+        <h3>123-456-5678</h3>
+    </header>
+    <main>
+        <article id="summary">
+            <h2>Summary</h2>
+            <p>I am an aspiring web developer with five years of experience working on clinical research studies as a Research Assistant involved with information technology and data management tasks. Currently, I am focusing on expanding my web development skills and building projects that showcase my knowledge.</p>
+        </article>
+        <article id="edu-tr">
+            <h2>Education</h2>
+            <p>B.A., Psychology, University of Maryland, Baltimore County, 2015
+                </p>
+            <h3>Additional Training</h3>
+            <ul>
+                <li>Introduction to C#, CodeAcademy, 2021</li>
+                <li>Introduction to Flutter Development with Dart, The App Brewery, 2020</li>
+                <li>Java Web Development Bootcamp, Montgomery College, 2020</li>
+                <li>CSPro Android for Intermediate Users Workshop, U.S. Census Bureau, 2019</li>
+            </ul>
+        </article>
+        <article id="experience">
+            <h2>Experience</h2>
+            <section><h3>Westat</h3>
+                <h4>Research Assistant</h4>
+                <h5>January 2017 - Present</h5>
+                <ul>
+                    <li>Worked within the development team to design and program survey questionnaires in
+                        the CSPro mobile database application for an HIV-related study.</li>
+                    <li>Created and administered device configuration and management processes in
+                        AirWatch mobile device management software.</li>
+                    <li>Designed, created, and tested other data entry forms and processes for a survey-based,
+                        nutrition-related study.</li>
+                    <li>Trained data collection staff to use data collection forms, and processed incoming data.</li>
+                    <li>Helped maintain electronic trial master files for multiple clinical trials.</li>
+                    <li>Completed other administrative tasks, such as Coordinating client and third-party
+                        audits, drafting client reports, and maintaining documentation on project structure and
+                        management.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Brookeville Brewing LLC</h3>
+                <h4>Marketing and Operations Manager</h4>
+                <h5>March 2016 - December 2016</h5>
+                <ul>
+                    <li>Designed website and developed web content.</li>
+                    <li>Promoted brewery’s events and products through regular social media posts. </li>
+                    <li>Coordinated with vendors and musicians to book weekly food and entertainment.</li>
+                    <li>Identified potential wholesale customers and created a weekly sales strategy dependent upon the product inventory on-hand.</li>
+                    <li>Organized and prepared for on-site and off-site events by preparing event equipment and displays, training staff, and obtaining proper permitting.</li>
+                    <li>Designed and implemented front of the house standard operating procedures (SOPs). </li>
+                    <li>Managed and trained 15 to 20 staff-members to follow front-of-house SOPs</li>
+                    <li>Basic accounting duties, including managing accounts receivable and payable, managing general ledger through SAP software, filing various tax forms, and submitting weekly payroll.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Division of Pediatric Nephrology, Johns Hopkins University</h3>
+                <h4>Research Program Assistant II</h4>
+                <h5>January 2016 - March 2016</h5>
+                <ul>
+                    <li>Drafted and completed IRB applications for various projects.</li>
+                    <li>Collected and entered patient data from electronic medical records for a quality
+                        improvement study related to patient care in the pediatric nephrology clinic.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Brookeville Brewing LLC</h3>
+                <h4>Marketing Coordinator</h4>
+                <h5>August 2015 - January 2016</h5>
+                <ul>
+                    <li>Designed marketing plan to brand and advertise start-up brewery.</li>
+                    <li>Established online presence for startup brewery, which included creating the company’s website, creating social media pages, and content for each platform.</li>
+                    <li>Evaluated data from online media to measure the company’s reach and growth through online platforms.</li>
+                    <li>Corresponded with local vendors to begin crafting food and beverage menu for tasting room.</li>
+                    <li>Completed labor-oriented tasks as needed.Completed labor-oriented tasks as needed.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <h4>alex.c.evans1@gmail.com --- 202-689-7298</h4>
+        <h5>Created by Alex Evans, 2021</h5>
+    </footer>
 </body>
 </html>
